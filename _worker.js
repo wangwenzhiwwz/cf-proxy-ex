@@ -114,73 +114,111 @@ function covToAbs(element){
 
 `;
 const mainPage = `
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>你的代理项目</title>
   <style>
-    body{
-      background:rgb(150,10,10);
-      color:rgb(240,240,0);
+    body {
+      background: #fff;
+      color: #000;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
     }
-    a{
-      color:rgb(250,250,180);
+    a {
+      color: #000;
+      text-decoration: none;
     }
-    del{
-      color:rgb(190,190,190);
+    a:hover {
+      text-decoration: underline;
     }
-    .center{
-      text-align:center;
+    del {
+      color: #666;
     }
-    .important{
-      font-weight:bold;
-      font-size:27;
+    .important {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    h3, h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    ul {
+      font-size: 16px;
+      margin-bottom: 20px;
+      text-align: left;
+      list-style-position: inside;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 280px !important;
+      width: 100%;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    @media (min-width: 800px) {
+      body {
+        max-width: 800px;
+        margin: 0 auto;
+      }
     }
   </style>
 </head>
 <body>
-  <h3 class="center">
-    I made this project because some extreme annoying network filter software in my school, which is notorious "Goguardian", and now it is open source at <a>https://github.com/1234567Yang/cf-proxy-ex/</a>.
+  <h3>
+    我创建了这个项目，因为我学校里的某些极其恼人的网络过滤软件，它臭名昭著，就是 "Goguardian"，现在它已经开源在 <a href="https://github.com/1234567Yang/cf-proxy-ex/">https://github.com/1234567Yang/cf-proxy-ex/</a>。
   </h3>
   <br><br><br>
-  <ul style="font-size:25;">
-  <li class="important">How to use this proxy:<br>
-    Type the website you want to go to after the website's url, for example: <br>
-    https://the current url/github.com<br>OR<br>https://the current url/https://github.com</li>
+  <ul>
+    <li class="important">如何使用这个代理：<br>
+      在网址后输入你想访问的网站，例如：<br>
+      https://当前网址/github.com<br>或者<br>https://当前网址/https://github.com</li>
     <br>
-    <li>If your browser show 400 bad request, please clear your browser cookie<br></li>
-    <li>Why I make this:<br> Because school blcok every website that I can find math / CS and other subjects' study material and question solutions. In the eyes of the school, China (and some other countries) seems to be outside the scope of this "world". They block access to server IP addresses in China and block access to Chinese search engines and video websites. Of course, some commonly used social software has also been blocked, which once made it impossible for me to send messages to my parents on campus. I don't think that's how it should be, so I'm going to fight it as hard as I can. I believe this will not only benefit myself, but a lot more people can get benefits.</li>
-   <li>If this website is blocked by your school: <br>Contact me at <a href="mailto:help@wvusd.homes">help@wvusd.homes</a>, and I will setup a new webpage.</li>
-    <li>Limitation:<br>Although I tried my best to make every website proxiable, there still might be pages or resources that can not be load, and the most important part is that <span class="important">YOU SHOULD NEVER LOGIN ANY ACCOUNT VIA ONLINE PROXY</span>.</li>
+    <li>如果你的浏览器显示400错误，请清除浏览器的Cookie。<br></li>
+    <li>我为什么创建这个项目：<br> 因为学校封锁了我能找到的所有数学/计算机科学和其他学科的学习材料和问题解答网站。在学校的眼中，中国（以及其他一些国家）似乎不在这个 "世界" 的范围内。他们封锁中国的服务器IP地址，并封锁中国的搜索引擎和视频网站。当然，一些常用的社交软件也被封锁了，这曾经使我在校园内无法向父母发送消息。我认为这不应该是这样，所以我要尽我所能去反对。我相信这不仅会使我受益，还会使更多的人受益。</li>
+    <li>如果你的学校封锁了这个网站：<br>请通过邮箱联系我：<a href="mailto:help@wvusd.homes">help@wvusd.homes</a>，我会设置一个新的网页。</li>
+    <li>限制：<br>尽管我尽力使每个网站都可以代理访问，但仍可能有页面或资源无法加载，最重要的是 <span class="important">你绝对不应该通过在线代理登录任何账户</span>。</li>
   </ul>
 
-  <h1 style="font-size:30">
-
+  <h1>
+    
   </h1>
   <br><br><br>
   <h3>
-    
     <br>
-    <span>Proxies that can bypass the school network blockade:</span>
+    <span>可以绕过学校网络封锁的代理：</span>
     <br><br>
-    <span>Traditional VPNs such as <a href="https://hide.me/">hide me</a>.</span>
+    <span>传统的VPN，如 <a href="https://hide.me/">hide me</a>。</span>
     <br><br>
-    <a href="https://www.torproject.org/">Tor Browser</a><span>, short for The Onion Router, is free and open-source software for enabling anonymous communication. It directs Internet traffic via a free, worldwide volunteer overlay network that consists of more than seven thousand relays. Using Tor makes it more difficult to trace a user's Internet activity.</span>
+    <a href="https://www.torproject.org/">Tor浏览器</a><span>，即洋葱路由器，是一款用于实现匿名通信的免费开源软件。它通过一个由全球志愿者组成的免费覆盖网络来引导互联网流量，该网络包含超过七千个中继节点。使用Tor可以更难追踪用户的互联网活动。</span>
     <br><br>
-    <a href="https://v2rayn.org/">v2RayN</a><span> is a GUI client for Windows, support Xray core and v2fly core and others. You must subscribe to an <a href = "https://aijichang.org/6190/">airport</a> to use it. For example, you can subscribe <a href="https://feiniaoyun.xyz/">fly bird cloud</a>.</span>
+    <a href="https://v2rayn.org/">v2RayN</a><span> 是一个Windows的GUI客户端，支持Xray核心、v2fly核心等。您必须订阅一个 <a href="https://aijichang.org/6190/">机场</a> 才能使用。例如，您可以订阅 <a href="https://feiniaoyun.xyz/">飞鸟云</a>。</span>
     <br><br>
-    <span>Bypass <del>Goguardian</del> by proxy: You can buy a domain($1) and setup by yourself: </span><a href="https://github.com/gaboolic/cloudflare-reverse-proxy">how to setup a proxy</a><span>. Unless <del>Goguardian</del> use white list mode, this can always work.</span>
+    <span>通过代理绕过 <del>Goguardian</del>：您可以购买一个域名（$1），并自行设置：<a href="https://github.com/gaboolic/cloudflare-reverse-proxy">如何设置代理</a>。除非 <del>Goguardian</del> 使用白名单模式，否则这种方法始终有效。</span>
     <br>
-    <span>Too expensive? Never mind! There are a lot of free domains registration companies (for the first year of the domain) that do not need any credit card, search online!</span>
+    <span>太贵？没关系！有许多免费的域名注册公司（域名的第一年）不需要任何信用卡，去网上搜索一下吧！</span>
     <br><br>
-    <span>Youtube video unblock: "Thanks" for Russia that they started to invade Ukraine and Google blocked the traffic from Russia, there are a LOT of mirror sites working. You can even <a href="https://github.com/iv-org/invidious">setup</a> one by yourself.</span>
+    <span>解锁YouTube视频："感谢"俄罗斯开始侵入乌克兰，谷歌屏蔽了来自俄罗斯的流量，有很多镜像站点正在运行。你甚至可以 <a href="https://github.com/iv-org/invidious">自己设置一个</a>。</span>
   </h3>
   <a href="https://goguardian.com" style="visibility:hidden"></a>
   <a href="https://blocked.goguardian.com/" style="visibility:hidden"></a>
   <a href="https://www.google.com/gen_204" style="visibility:hidden"></a>
-  <p style="font-size:280px !important;width:100%;location:relative;" class="center">
+  <p>
     ☭
   </p>
 </body>
 </html>
+
 `;
 const redirectError = `
 <html><head></head><body><h2>Error while redirecting: the website you want to access to may contain wrong redirect information, and we can not parse the info</h2></body></html>
