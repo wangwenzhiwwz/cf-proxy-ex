@@ -119,7 +119,7 @@ const mainPage = `
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>你的代理项目</title>
+  <title>P.WWZ.iM</title>
   <style>
     body {
       background: #fff;
