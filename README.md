@@ -21,11 +21,12 @@ Cloudflare超级代理，OpenAI/ChatGPT代理，Github加速，在线代理。
 
 
 # 在线体验
-https://y.demo.wvusd.homes/
+[P.WWZ.iM](https://p.wwz.im/)
 
 # 用法
 * 在cloudflare网站中新建worker，把worker.js文件中的内容复制进去即可使用。
 * 在任意网址前面加上https://你的域名/<br>例如https://你的域名/https://github.com
+* https://p.wwz.im/https://github.com
 * 本项目基于[gaboolic的cloudflare-reverse-proxy](https://github.com/gaboolic/cloudflare-reverse-proxy/)
 
 # 快速开始
